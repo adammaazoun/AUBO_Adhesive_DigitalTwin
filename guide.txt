@@ -1,0 +1,15 @@
+
+
+cd aubo_ros2_ws 
+colcon build
+source install/setup.bash
+
+1-root@aubo-2605431136:~# ./aubo_startup.sh 
+2-root@aubo-2605431136:~/Desktop/aubo_ros2_ws#ros2 service call /set_glue_mode std_srvs/srv/SetBool "{data: true}"
+3-root@aubo-2605431136:~/Desktop/aubo_ros2_ws# ros2 run ros_tcp_endpoint default_server_endpoint     --ros-args -p ROS_IP:=0.0.0.0 -p ROS_TCP_PORT:=10000
+
+
+
+launch unity and start the sim
+launch the server and go to unity simulation directly
+python .\app.py
