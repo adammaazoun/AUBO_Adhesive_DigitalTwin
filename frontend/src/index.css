@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #f4f9ff;
+  --color-foreground: #0f172a;
+  --color-primary: #4aa3ff;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #64748b;
+  --color-destructive: #dc2626;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-muted: #ffffff;
+  --color-border: #d7e6f7;
+  --color-input: #eaf4ff;
+  --radius: 0.5rem;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(74, 163, 255, 0.16), transparent 34%),
+    radial-gradient(circle at top right, rgba(98, 183, 255, 0.1), transparent 30%),
+    var(--color-background);
+  color: var(--color-foreground);
+}
